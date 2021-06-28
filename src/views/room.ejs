@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="assets/css/global.css" />
     <link rel="stylesheet" href="assets/css/room.css" />
     <link rel="stylesheet" href="assets/css/modal.css" />
+
+    <script src="/assets/scripts/main.js" defer type="module"></script>
   </head>
   <body>
     <div id="room" class="content">
@@ -32,8 +34,14 @@
         <section id="question-form">
           <h2>Faça sua pergunta</h2>
           <form action="">
-            <label for-id="question" class="sr-only">O que você quer perguntar?</label>
-            <textarea name="question" id="question" placeholder="O que você quer perguntar?"></textarea>
+            <label for-id="question" class="sr-only"
+              >O que você quer perguntar?</label
+            >
+            <textarea
+              name="question"
+              id="question"
+              placeholder="O que você quer perguntar?"
+            ></textarea>
 
             <footer>
               <div>
@@ -51,13 +59,11 @@
           <div class="questions">
             <div class="question-wrapper">
               <div class="question-date">
-                <div class="question-hour">
-                  25/06/2021 - 23:30
-                </div>
+                <div class="question-hour">25/06/2021 - 23:30</div>
               </div>
               <div class="question-content">
                 <div class="user">
-                  <img src="assets/img/avatar.svg" alt="Avatar">
+                  <img src="assets/img/avatar.svg" alt="Avatar" />
                 </div>
                 <div class="question">
                   <p>Qual a potência de um celta 2011 4 portas?</p>
@@ -65,11 +71,11 @@
               </div>
               <div class="actions">
                 <a href="#" class="check">
-                  <img src="assets/img/check.svg" alt="Marcar como lida">
+                  <img src="assets/img/check.svg" alt="Marcar como lida" />
                   Marcar como lida
                 </a>
                 <a href="#" class="delete">
-                  <img src="assets/img/trash.svg" alt="Excluir">
+                  <img src="assets/img/trash.svg" alt="Excluir" />
                   Excluir
                 </a>
               </div>
@@ -77,13 +83,11 @@
 
             <div class="question-wrapper read">
               <div class="question-date">
-                <div class="question-hour">
-                  25/06/2021 - 23:30
-                </div>
+                <div class="question-hour">25/06/2021 - 23:30</div>
               </div>
               <div class="question-content">
                 <div class="user">
-                  <img src="assets/img/avatar.svg" alt="Avatar">
+                  <img src="assets/img/avatar.svg" alt="Avatar" />
                 </div>
                 <div class="question">
                   <p>Qual a potência de um celta 2011 4 portas?</p>
@@ -91,7 +95,7 @@
               </div>
               <div class="actions">
                 <a href="#" class="delete">
-                  <img src="assets/img/trash.svg" alt="Excluir">
+                  <img src="assets/img/trash.svg" alt="Excluir" />
                   Excluir
                 </a>
               </div>
@@ -101,22 +105,28 @@
       </main>
     </div>
 
-    <div class="modal-wrapper active">
+    <div class="modal-wrapper">
       <div class="modal">
         <h2>Excluir pergunta</h2>
         <p>Tem certeza que você deseja excluir esta pergunta?</p>
 
         <form action="">
-          <label for-id="password" class="sr-only">Digite sua senha admin</label>
-          <input type="password" name="password" id="password" placeholder="Digite sua senha"/>
-          
+          <label for-id="password" class="sr-only"
+            >Digite sua senha admin</label
+          >
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Digite sua senha"
+          />
+
           <div class="buttons">
-            <div class="button grey">Cancelar</div>
+            <div class="button grey cancel">Cancelar</div>
             <button class="red">Sim, excluir</button>
           </div>
         </form>
       </div>
     </div>
-
   </body>
 </html>
